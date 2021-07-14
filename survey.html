@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="survey.css">
+
+<header>
+    <h1 id = title class=text-center> Survey Form</h1>
+    <p id = description  class=text-center>
+        Thank you for taking the time to help us fill out the form to facilitate the investigation.
+    </p>
+</header>
+<form id="survey-form">
+    <div>
+        <label id="name" for="name">Name</label>
+        <input class="form-control" type="text" name="user name" id="name" placeholder="Enter your name" required>
+    </div>
+
+    <div>
+        <label id="email" for="email">Email</label>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email" required>
+    </div>
+
+    <div>
+        <label id="number" for="number">Age<span class="clue">(optional)</span></label>
+        <input class="form-control" type="number" name="age" id="number" min=10 max=100 placeholder="Enter your Age">
+    </div>
+</form>

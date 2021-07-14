@@ -1,0 +1,17 @@
+#title{
+    color: darkblue;
+}
+.text-center{
+    text-align: center;
+  }
+#description{
+    font-style: italic;
+}
+.clue{
+    font-size: 0.9em;
+    color: gray;
+}
+.form-control{
+    display: block; /*元素將會在網頁上呈現自動換行的效果*/
+    width:50%;/*表格可填寫的長度(寬度)*/
+}
