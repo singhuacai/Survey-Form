@@ -14,4 +14,12 @@
 .form-control{
     display: block; /*元素將會在網頁上呈現自動換行的效果*/
     width:50%;/*表格可填寫的長度(寬度)*/
+    background-clip: padding-box;
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
 }
