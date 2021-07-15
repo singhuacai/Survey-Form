@@ -1,14 +1,23 @@
 #title{
-    color: darkblue;
+  color: darkblue;
 }
 
 body{
   background: url("https://pbs.twimg.com/profile_images/1170672946882334721/SmSYFEcG_400x400.jpg") no-repeat;
   background-size: cover;
+  color: rgb(77, 134, 241);
+  font-family: monospace;
+  font-size: 20px;
 }
 .div1{
     -webkit-filter: opacity(50%); /* Chrome, Safari, Opera */
     filter: opacity(50%);
+}
+.title-center{
+  text-align: center;
+  font-size: 70px;
+  text-shadow:3px 3px 3px rgb(77, 134, 241);
+  font-family: monospace;
 }
 .text-center{
     text-align: center;
@@ -27,7 +36,9 @@ body{
 .form-control{
     display: block; /*元素將會在網頁上呈現自動換行的效果*/
     width:50%;/*表格可填寫的長度(寬度)*/
+    font:bold;
     background-clip: padding-box;
+    background: var(--color-green);
 }
 .input-radio,
 .input-checkbox {
@@ -40,6 +51,7 @@ body{
     min-height: 120px;
     width: 50%;
     padding: 0.625rem;
+    background: var(--color-green);
     resize: vertical;
   }
 .submit-button {
@@ -50,5 +62,6 @@ body{
     color: inherit;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 20px;
   }
  
