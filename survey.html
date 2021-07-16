@@ -1,139 +1,142 @@
 <link rel="stylesheet" href="survey.css">
 <!--background="https://imgcdn.cna.com.tw/www/WebPhotos/1024/20201224/1890x1260_867251871177.jpg"-->
+<div class="demo1-bg">
+  <div class="demo1">
+    <header>
+        <p id = title class=title-center> Survey Form</p>
+        <p id = description  class=text-center>
+            Thank you for taking the time to help us fill out the form to facilitate the investigation.
+        </p>
+    </header>
+    <body> 
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name" for="name">Name</label>
+            <input class="form-control" type="text" name="user name" id="name" placeholder="Enter your name" required>
+        </div>
 
-<header>
-    <p id = title class=title-center> Survey Form</p>
-    <p id = description  class=text-center>
-        Thank you for taking the time to help us fill out the form to facilitate the investigation.
-    </p>
-</header>
-<body>
-<form id="survey-form">
-    <div class="form-group">
-        <label id="name" for="name">Name</label>
-        <input class="form-control" type="text" name="user name" id="name" placeholder="Enter your name" required>
-    </div>
+        <div class="form-group">
+            <label id="email" for="email">Email</label>
+            <input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email" required>
+        </div>
 
-    <div class="form-group">
-        <label id="email" for="email">Email</label>
-        <input class="form-control" type="email" name="email" id="email" placeholder="Enter your Email" required>
-    </div>
+        <div class="form-group">
+            <label id="number" for="number">Age<span class="clue">(optional)</span></label>
+            <input class="form-control" type="number" name="age" id="number" min=10 max=100 placeholder="Enter your Age">
+        </div>
 
-    <div class="form-group">
-        <label id="number" for="number">Age<span class="clue">(optional)</span></label>
-        <input class="form-control" type="number" name="age" id="number" min=10 max=100 placeholder="Enter your Age">
-    </div>
+        <div class="form-group">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current role</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Full Time Learner</option>
+              <option value="preferNo">Prefer not to say</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-    <div class="form-group">
-        <p>Which option best describes your current role?</p>
-        <select id="dropdown" name="role" class="form-control" required>
-          <option disabled selected value>Select current role</option>
-          <option value="student">Student</option>
-          <option value="job">Full Time Job</option>
-          <option value="learner">Full Time Learner</option>
-          <option value="preferNo">Prefer not to say</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
+          <div class="form-group">
+            <p>Would you recommend Mayday to a friend?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Definitely</label><br>
 
-      <div class="form-group">
-        <p>Would you recommend Mayday to a friend?</p>
-        <label>
-          <input
-            name="user-recommend"
-            value="definitely"
-            type="radio"
-            class="input-radio"
-            checked
-          />Definitely</label><br>
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />Maybe</label><br>
+      
+            <label>
+              <input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Not sure</label>
+          </div>
 
-        <label>
-          <input
-            name="user-recommend"
-            value="maybe"
-            type="radio"
-            class="input-radio"
-          />Maybe</label><br>
-  
-        <label>
-          <input
-            name="user-recommend"
-            value="not-sure"
-            type="radio"
-            class="input-radio"
-          />Not sure</label>
-      </div>
+          <div class="form-group">
+            <p>What information would you like to see that we release?
+              <span class="clue">(Check all that apply)</span>
+            </p>  
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Ashin"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Ashin</label><br>
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Masa"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Masa</label><br>
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Monster"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Monster</label><br>
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Stone"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Stone</label><br>
+            <label
+              ><input
+                name="prefer"
+                value="Introduction of Guan Yu"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Guan Yu</label><br>
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Mayday’s Music"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Mayday’s Music </label><br>
+            <label>
+              <input
+                name="prefer"
+                value="Introduction of Mayday’s Story"
+                type="checkbox"
+                class="input-checkbox"
+              />Introduction of Mayday’s Story</label>
+            <label>          
+          </div>
+      
+          <div class="form-group">
+            <p font="bold">Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+          </div>
 
-      <div class="form-group">
-        <p>What information would you like to see that we release?
-          <span class="clue">(Check all that apply)</span>
-        </p>  
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Ashin"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Ashin</label><br>
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Masa"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Masa</label><br>
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Monster"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Monster</label><br>
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Stone"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Stone</label><br>
-        <label
-          ><input
-            name="prefer"
-            value="Introduction of Guan Yu"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Guan Yu</label><br>
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Mayday’s Music"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Mayday’s Music </label><br>
-        <label>
-          <input
-            name="prefer"
-            value="Introduction of Mayday’s Story"
-            type="checkbox"
-            class="input-checkbox"
-          />Introduction of Mayday’s Story</label>
-        <label>          
-      </div>
-  
-      <div class="form-group">
-        <p font="bold">Any comments or suggestions?</p>
-        <textarea
-          id="comments"
-          class="input-textarea"
-          name="comment"
-          placeholder="Enter your comment here..."
-        ></textarea>
-      </div>
-
-      <div class="form-group">
-        <button type="submit" id="submit" class="submit-button">
-          Submit
-        </button>
-      </div>
-</form>
-</body>
+          <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+    </form>
+    </body>
+  </div>
+</div>
